@@ -1,0 +1,528 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Navbar */
+
+.main-navbar {
+    width: 100;
+    height: 3rem;
+    position: sticky;
+}
+
+.navbar-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-options img {
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.middle-div-nav {
+    display: flex;
+    border: 2px solid #121212;
+    background-color: #121212;
+    border-radius: 2rem;
+    width: 25rem;
+}
+
+.middle-div-nav:hover {
+    display: flex;
+    border: 2px solid #242323;
+    background-color: #121212;
+    border-radius: 2rem;
+    width: 25rem;
+}
+
+.middle-div-nav button {
+    border: none;
+    background-color: #121212;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.middle-div-nav i {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+#Search-icons {
+    opacity: 50%;
+}
+
+#Search-icons:hover {
+    opacity: 100%;
+}
+
+.fa-brands {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.fa-solid {
+    cursor: default;
+}
+
+.middle-div-nav i:hover {
+    opacity: 100%;
+}
+
+input[type=search] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    flex: 1;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border: none;
+    background-color: #121212;
+    border-radius: 2rem;
+    outline: none;
+}
+
+input[type=search]:hover {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    flex: 1;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border: none;
+    background-color: #121212;
+    border-radius: 2rem;
+}
+
+.login-form {
+    display: flex;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.login {
+    border: none;
+    border-radius: 2rem;
+    width: 7rem;
+    margin: 0.15rem 0 0.35rem 1rem;
+    cursor: pointer;
+    opacity: 80%;
+    
+}
+.login:hover {
+    border: none;
+    border-radius: 2rem;
+    width: 7rem;
+    margin: 0.15rem 0 0.35rem 1rem;
+    cursor: pointer;
+    opacity: 100%;
+    box-shadow: 2px 2px 12px rgb(255, 255, 255);
+}
+
+/* Sidebar */
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    color: white;
+    background-color: black;
+    width: 300px;
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+}
+
+.main_Content {
+    background-color: #121212;
+    color: white;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-top: 0.5rem
+}
+
+.music-player {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.7rem;
+    opacity: 0.7;
+}
+
+.Library-nav-option {
+    line-height: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.7rem;
+    opacity: 0.7;
+}
+
+.nav-option:hover {
+    opacity: 100%;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.library {
+    background-color: #121212;
+    margin-top: 0.35rem;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.library-option a {
+    margin-left: 0.15rem;
+}
+
+.icons {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.icons i {
+    opacity: 50%;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 100%;
+    margin-right: 1rem;
+}
+
+.lib-box {
+    height: 8rem;
+    font-size: 0.7rem;
+    margin: 0.85rem 0 1.75rem 0;
+    background-color: rgb(31, 31, 31);
+    border-radius: 0.75rem;
+}
+
+.lib-box .box-p1 {
+    padding: 0.0015rem 0.75rem;
+}
+
+.lib-box .box-p1 h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.lib-box .box-p1 p {
+    font-size: 0.7rem;
+    font-weight: 200;
+    opacity: 90%;
+    cursor: default;
+}
+
+.lib-box .box-p1 button {
+    height: 1.8rem;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#nav-option-search {
+    display: block;
+}
+
+@media (min-width:1192px) {
+    #nav-option-search {
+        display: none;
+    }
+}
+
+@media (max-width:374px) {
+    .login-form {
+        display: none;
+    }
+}
+
+@media (max-width:1192px) {
+    .middle-div-nav {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Main-Content */
+
+.main_Content {
+    padding: 0.5rem 1.5rem 0 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #18171720;
+}
+
+.card:hover {
+    border-radius: 0.5rem;
+    background-color: #1f1f1f7e;
+}
+
+.card {
+    padding: 1rem;
+    width: 17rem;
+    border-radius: 0.5rem;
+}
+
+.card-container img {
+    width: 100%;
+}
+
+#artist {
+    border-radius: 50%;
+}
+
+.card h5 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.card p {
+    opacity: 65%;
+}
+
+.footer {
+    display: flex;
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 2px solid rgb(114, 106, 106);
+
+}
+
+/* Music Player*/
+
+/* left-side */
+
+.album-player {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.album-player img {
+    height: 100%;
+}
+
+.album-player-name p {
+    margin: 2px;
+    cursor: pointer;
+}
+
+.album-player-name .singer {
+    font-size: 0.7rem;
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.album-player-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 4rem;
+   
+}
+.album-player-icon:hover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 4rem;
+}
+
+.fa-heart {
+    opacity: 50%;
+}
+.fa-heart:hover {
+    opacity: 100%;
+}
+
+.fa-bookmark {
+    opacity: 50%;
+}
+.fa-bookmark:hover {
+    opacity:100%;
+}
+
+
+/* Cenetr */
+
+.play-pause-button {
+    justify-content: center;
+    width: 35rem;
+}
+
+.control-play-pause-button {
+    display: flex;
+    height: 60%;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+    
+}
+.play-pause-button .control-play-pause-button img {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    opacity:50%;
+   
+}
+.play-pause-button .control-play-pause-button img:hover {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    opacity:100%;
+    box-shadow: 4px 4px 8pxpx rgb(255, 255, 255);
+}
+
+
+
+.play-pause-button .bar-playing input[type=range] {
+    width: 90%;
+    appearance: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.play-pause-button .bar-playing input[type=range]::-webkit-slider-runnable-track {
+   
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+    
+}
+.play-pause-button .bar-playing input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -4px;
+    
+}
+
+.play-pause-button .bar-playing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+
+#current-time {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#total-time {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+/* right */
+
+.vol-and-other-control {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-vol-and-other-control {
+    display: flex;
+    width: 20%;
+    cursor: pointer;
+}
+
+.control-vol-and-other-control i {
+    opacity: 50%;
+}
+.control-vol-and-other-control i:hover {
+    opacity: 100%;
+}
+
+#audio-volume {
+    cursor: pointer;
+}

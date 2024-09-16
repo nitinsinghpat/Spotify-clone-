@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div>
+            <nav class="main-navbar">
+                <div class="navbar-options">
+                    <img src="./assets/logo.png">
+                    <div class="middle-div-nav">
+                        <button><i class="fa-solid fa-magnifying-glass" id="Search-icons"></i></button>
+                        <input type="search" name="Search" id="Search-icons" placeholder="What do you want to play?">
+                        <button><i class="fa-brands fa-spotify"></i></button>
+                    </div>
+
+                    <div class="login-form">
+                        <p>Sign up</p>
+                        <button class="login">Log in</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <div class="navbar">
+                    <div class="nav-option nav-option-home" style="opacity: 1;">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="nav-option" id="nav-option-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+
+                <div class="library">
+                    <div class="options">
+                        <div class="library-option Library-nav-option">
+                            <img src="./assets/library_icon.png" class="library_icon">
+                            <a href="#" class="library-text">Your Library</a>
+                        </div>
+
+                        <div class="icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="lib-box">
+                        <div class="box-p1">
+                            <h3>Create Your 1st playlist</h3>
+                            <p>It's easy,we'll help you</p>
+                            <button class="badge">Create playlist</button>
+                        </div>
+                    </div>
+
+                    <div class="lib-box">
+                        <div class="box-2 box-p1" id="box-2">
+                            <h3>Let's find some podcasts to follow</h3>
+                            <p>we'll keep your updated on new episodes </p>
+                            <button class="badge">Browse podcasts</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Featured Charts -->
+
+            <div class="main_Content">
+                <h3 class="category">Featured Charts</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" class="Card-1">
+                        <h5 class="Album-name">Top Song - Global</h5>
+                        <p class="song-details">Your daily update of the most played track right...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="Card-1">
+                        <h5 class="Album-name">Top 50 - Global</h5>
+                        <p class="song-details">Your daily update of the most played track right...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" class="Card-1">
+                        <h5 class="Album-name">Top Song- India</h5>
+                        <p class="song-details">Your daily update of the most played track right...</p>
+                    </div>
+                </div>
+
+                <!-- Popular artists -->
+
+                <h3 class="category">Popular artists</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/Artist/Pritam_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">Pritam</h5>
+                        <p class="song-details">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/Artist/A.R. Rahman_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">A.R.Rahman</h5>
+                        <p class="song-details">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/Artist/KK_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">KK</h5>
+                        <p class="song-details">Artist</p>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="./assets/Artist/Atif Aslam_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">Top 50 - Global</h5>
+                        <p class="song-details">Atif Aslam</p>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="./assets/Artist/Darshan Raval_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">Darshan Raval</h5>
+                        <p class="song-details">Artist</p>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="./assets/Artist/Sachin-Jigar_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">Sachin-Jigar</h5>
+                        <p class="song-details">Artist</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/Artist/Vishal-Shekhar_artist_cover.jpg" class="Card-1" id="artist">
+                        <h5 class="Album-name">Vishal-Shekhar</h5>
+                        <p class="song-details">Artist</p>
+                    </div>
+
+                </div>
+
+                <!-- Popular albums -->
+
+                <h3 class="category">Popular albums</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/Popular album/Aaj Ki Raat (From _Stree 2_)_album_cover.jpg" class="Card-1">
+                        <h5 class="Album-name">Aaj Ki Raat (from "Stree 2")</h5>
+                        <p class="song-details">Sachin-Jigar, Amitabh Bhattacharya</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular album/GLORY_album_cover.jpg" class="Card-1">
+                        <h5 class="Album-name">GLORY</h5>
+                        <p class="song-details">Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular album/Aashiqui 2_album_cover.jpg" class="Card-1">
+                        <h5 class="Album-name">Aashiqui</h5>
+                        <p class="song-details">Mithoon, Ankit Tiwari,Jeet ganguli</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular album/ANIMAL_album_cover.jpg" class="Card-1">
+                        <h5 class="Album-name">Animal</h5>
+                        <p class="song-details">Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular album/love hotel_album_cover.jpg" class="Card-1">
+                        <h5 class="Album-name">Love hotel</h5>
+                        <p class="song-details">leftovermax</p>
+                    </div>
+                </div>
+
+                <!-- Popular radio -->
+
+                <h3 class="category">Popular radio</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/Popular radio/Arijit Singh Radio_playlist_cover.jpg" class="Card-1">
+
+                        <p class="song-details">With Sachin-Jigar, Mithoon,Atif Aslam and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular radio/KK Radio_playlist_cover.jpg" class="Card-1">
+
+                        <p class="song-details">With Pritam, Mohit Chauhan, Atif Aslam and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular radio/Kishore Kumar Radio_playlist_cover.jpg" class="Card-1">
+
+                        <p class="song-details">With Mohammed Rafi, Mukesh, Asha Bhosle and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular radio/Karan Aujla Radio_playlist_cover.jpg" class="Card-1">
+
+                        <p class="song-details">With Diljit Dosanjh, Shubh, Sidhu Moose Wala and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular radio/Diljit Dosanjh Radio_playlist_cover.jpg" class="Card-1">
+
+                        <p class="song-details">With Karan Aujla, Shubh, AP Dhillon and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Popular radio/A.R. Rahman Radio_playlist_cover.jpg" class="Card-1">
+
+                        <p class="song-details">With Anirudh Ravichander, Harris Jayaraj, Sid Sriram and more</p>
+                    </div>
+                </div>
+
+                <!-- Popular Episdoes -->
+
+                <h3 class="category">Popular Episdoes</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="assets/Trending-Episode/Anubis _ God of Death - Part 1_episode_cover.jpg"
+                            class="Card-1">
+                        <h5 class="Album-name">Anubis:God of Death - Part 1</h5>
+                        <p class="song-details">Jun2021 : 13 min</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Trending-Episode/Anubis _ God of Death - Part 2_episode_cover.jpg"
+                            class="Card-1">
+                        <h5 class="Album-name">Anubis:God of Death - Part 2 </h5>
+                        <p class="song-details">Jun2021 : 16 min</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Trending-Episode/Asatha Povathu Yaru _ Madurai Muthu Special _ Ep 96_episode_cover.jpg"
+                            class="Card-1">
+                        <h5 class="Album-name">Asatha Povathu yaru | Madurai Muthu Special |Ep 96</h5>
+                        <p class="song-details">Jun2021 : 11 min</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Trending-Episode/Ep 8 - Ye Na Thi Hamari Qismat_episode_cover.jpg"
+                            class="Card-1">
+                        <h5 class="Album-name">Ep 8 - Ye Na THhi Hamari Qismat</h5>
+                        <p class="song-details">Jun2021 : 3 min</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Trending-Episode/Mahabharata Episode 1_ Beginnings_episode_cover.jpg"
+                            class="Card-1">
+                        <h5 class="Album-name">Mahabharata Episdoe 1: Beginnings</h5>
+                        <p class="song-details">Jun2021 : 24 min</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Trending-Episode/Welcome back, RJ Balaji - Naallanaa Murukku_episode_cover.jpg"
+                            class="Card-1">
+                        <h5 class="Album-name">Welcome back, RJ Balaji - Naallanaa Murukku</h5>
+                        <p class="song-details">Jun2021 : 15 min</p>
+                    </div>
+                </div>
+
+                <!-- footer  -->
+
+                <div class="footer">
+                    <div class="line">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- left-side -->
+
+            <div class="music-player">
+                <div class="album-player">
+
+                    <!-- Album  --> 
+
+                    <img src="./assets/card3img.jpeg">
+
+                    <!-- album-player-name -->
+
+                    <div class="album-player-name">
+                        <p class="lyrics">Mere pass tum ho</p>
+                        <p class="singer">Rahat Fateh ali khan</p>
+                    </div>
+
+                    <!-- album-player-icon -->
+
+                    <div class="album-player-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+                </div>
+
+               <!-- center -->
+
+                <div class="play-pause-button">
+                    <div class="control-play-pause-button">
+                        <img src="./assets/player_icon1.png" style="height: 1.2rem;">
+                        <img src="./assets/player_icon2.png" style="height: 1.2rem;">
+                        <img src="./assets/player_icon3.png"  style="height: 2rem;">
+                        <img src="./assets/player_icon4.png" style="height: 1.2rem;">
+                        <img src="./assets/player_icon5.png" style="height: 1.2rem;">
+                    </div>
+                    <div class="bar-playing">
+                        <span class="time" id="current-time">1:55</span>
+                        <input type="range" name="music-bar" id="music-bar">
+                        <span class="time" id="total-time">3:49</span>
+                    </div>
+                </div>
+
+                <!-- right -->
+
+                <div class="vol-and-other-control">
+                    <div class="control-vol-and-other-control">
+                        <i class="fa-regular fa-file-video"></i>
+                    </div>
+                    <div class="control-vol-and-other-control">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <div class="control-vol-and-other-control">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="control-vol-and-other-control">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="control-vol-and-other-control">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="control-vol-and-other-control">
+                        <input type="range" name="volume-bar" id="audio-volume" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
